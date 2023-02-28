@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>입력하신 구구단은</h1>
+
+    <script>
+
+        var i = 0;
+        var j = 0;
+        var z = prompt("단수를 입력해 주세요.");
+
+
+        for (i = 1; i <= z; i++) {
+            document.write("<h2>" + z + "단</h2>");
+           
+            for (j = 1; j <= 9; j++) {
+                
+               
+                if (i = z) {
+                    document.write(i + " X " + j + " = " + i * j + "<br>");
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

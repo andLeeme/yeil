@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+
+        var size = parseInt(prompt("홀수와 짝수의 개수를 찾을 범위를 입력하세요."))
+        var start = parseInt(prompt("1-홀수  2-짝수"))
+        var i
+        var j = 0;
+
+        if (start == 1){
+            for (i = 0; i <= size; i++) {
+                if (i % 2 != 0) {
+                    j+=1
+                }
+            } document.write(j + "<br><br>")
+        }
+
+        if (start == 2){
+            for (i = 0; i <= size; i++) {
+                if (i % 2 != 1) {
+                    j+=1
+                }
+            } document.write(j + "<br><br>")
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*모든  제거*/
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: rgb(251, 247, 242);
+  display: inline-block;
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+  
+}
+
+
+.logo {
+
+  width: 10px;
+  vertical-align: middle;
+  
+}
+
+.logo>img {
+  height: 45px;
+  margin: 5px 0px 12px 30px;
+}
+
+nav {
+  display: inline-block;
+  margin-left: 12px;
+
+}
+
+
+.headerNav>li {
+  display: inline-block;
+  /* 리스트를 가로로 정렬*/
+
+}
+
+.headerNav>li>a {
+
+  padding: 0 12px;
+  color: rgb(63, 59, 59);
+  font-weight: 900;
+ 
+
+
+}
+
+#liMain {
+  color: rgb(250, 127, 60);
+
+}
+
+#liMain:hover {
+  color: rgb(218, 89, 20);
+
+}
+
+
+.headerNav>li>a:hover {
+  color: rgba(63, 63, 63, 0.781);
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.SearchBox {
+  font-size: 90%;
+  font-weight: normal;
+  text-align: left;
+  line-height: 250%;
+  width: 250px;
+  color: #58666e;
+  background-color: rgb(242, 243, 246);
+  border: none;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin-left: 70px;
+}
+
+.chatButton {
+  width: 90px;
+  height: 35px;
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 5px;
+  background-color: #fff;
+  font-weight: 900;
+  margin-left: 7px;
+
+}
+
+div {
+  display: inline-block;
+}
+
+.mainText {
+  margin-top: 250px;
+  margin-left: 100px;
+  display: inline-block;
+  font-size: 90%;
+  text-align: left;
+  
+
+}
+
+.mainText>h1 {
+  font-size: 300%;
+}
+
+
+.mainImg {
+  width: 750px;
+  display: inline-block;
+  margin-top: 80px;
+  margin-left: 60px;
+  vertical-align: middle;
+
+}

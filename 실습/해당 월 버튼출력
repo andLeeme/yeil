@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Display</title>
+
+</head>
+
+<body onload="OnloadPage()">
+    <button class="btn" value="1" onclick="getBtnValue(this.value)">1</button>
+    <button class="btn" value="2" onclick="getBtnValue(this.value)">2</button>
+    <button class="btn" value="3" onclick="getBtnValue(this.value)">3</button>
+    <button class="btn" value="4" onclick="getBtnValue(this.value)">4</button>
+    <button class="btn" value="5" onclick="getBtnValue(this.value)">5</button>
+    <button class="btn" value="6" onclick="getBtnValue(this.value)">6</button>
+    <button class="btn" value="7" onclick="getBtnValue(this.value)">7</button>
+    <button class="btn" value="8" onclick="getBtnValue(this.value)">8</button>
+    <button class="btn" value="9" onclick="getBtnValue(this.value)">9</button>
+
+    <div>
+        <p id="gugudanHead"></p>
+        <p id="_Data"></p>
+    </div>
+
+    <script>
+        let _xx;
+        let _gugudanhead = document.getElementById("gugudanHead");
+        let _gugudan = document.getElementById("_Data");
+
+        function OnloadPage() {
+            getBtnValue();
+        }
+
+        function getBtnValue(value) {
+            _xx = value;
+            _gugudanhead.innerText = "";
+            _gugudan.innerText = "";
+            _gugudanhead.innerText = _xx + "단"
+            for (let i = 1; i < 10; i++) {
+                _gugudan.innerText += _xx + " X " + i + " = " + _xx * i + "\n";
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
