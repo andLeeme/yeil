@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Syntax</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>  <!--제이쿼리 라이브러리를 외부에서 받아온다.-->
+    
+
+    <script>
+
+        function createHero() {
+            let call = document.getElementById("human");  // id가 human인 요소를 불러와 call 객체에 저장
+
+            let setField = document.createElement("p")  //  setField =  HTML요소에 p태그를 생성
+
+            setField.innerHTML = "new Hero."; // p태그를 생성하고  단락 추가
+
+            setField.setAttribute("id", "hero");  // 생성된 p태그에 id="hero" 추가
+
+            document.body.insertBefore(setField, human); // id가 human인 요소앞에 setField 요소를 삽입
+        }
+
+        function addAttribute() {
+            document.getElementById("hero").setAttribute("style", "color: blue");  // id가 hero 인 요소를 불러와 style :"color: blue"를 삽입한다.     
+        }
+
+        function create() {
+            createHero();		//   아이디가 "hero"인 HTML 요소를 생성함.
+            addAttribute();		//   아이디가 "hero"인 HTML 요소에 속성을 추가함.
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <h1>생성하기</h1>
+    <button onclick="create()">생성!</button> <!-- 클릭시 함수 create()가 실행되는 버튼을 만들었다.-->
+    <p id="human"></p>
+
+</body>
+
+</html>

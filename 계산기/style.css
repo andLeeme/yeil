@@ -1,0 +1,73 @@
+
+ h1,
+ h2 {
+     text-align: center;
+ }
+
+ main {
+
+     width: 150px; /*너비를 150px으로 고정*/
+ }
+ 
+.text{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+ .button-wrap {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr); 
+     background-color: #454448;
+     border-bottom-left-radius: 5px;
+     border-bottom-right-radius: 5px;     /* 한 줄에 4개씩 5px씩 둥글게 적용 */
+ } 
+
+ * {
+     box-sizing: border-box;         /*박스 사이즈를 벗어나지않게 해줌*/
+     color: white;
+ }
+
+ input,
+
+ button {
+     height: 35px;
+     outline: none;
+ }
+
+ input {
+     width: 100%;
+     text-align: right;
+     border: none;
+     background: #5B5B5D;
+     padding-right: 1rem;
+     font-size: 2rem;                  /*여러가지 버튼 꾸미기*/
+ }
+
+ button {
+     background: #828284;
+     border: 1px solid #454448;
+     font-size: 1rem;
+     border-radius: 5px;   
+ }
+
+ button:nth-child(4n+2),
+ button:last-child {
+     background-color: orange;
+ }
+
+ button:hover {
+     opacity: .5;
+ }
+
+ .ac {
+     grid-column: 1/4;
+     background: #6A6A6C;    /*4등분하여 나온 5개의 선 중에서 첫번째 선부터 4번째 선까지 지정
+     총 3칸*/
+ }
+
+ .zero {
+
+     grid-column: 1/3;   /*4등분하여 나온 5개의 선 중에서 첫번째 선부터 4번째 선까지 지정
+     총 2칸*/
+
+ }
